@@ -1,1 +1,21 @@
+version: 0.1
+files:
+  - source: ./DjangoAPI
+    destination: /home/ec2-user/var/www/DjangoAPI
+  - source: ./myenv
+    destination: /home/ec2-user/var/www/myenv
 
+phases:
+  install:
+    runtime-version:
+      python: 3.8
+  pre_build:
+    command: 
+      - echo Prebuilt sucessfull
+      - pip install django
+  build:
+    command:
+      - echo build successfull
+  post_build:
+    command:
+      - echo postbuild successfull
