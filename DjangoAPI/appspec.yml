@@ -1,10 +1,7 @@
 version: 0.0
 os: linux
-files:
-  - source: ./DjangoAPI
-    destination: /home/ec2-user/var/www/DjangoAPI
-  - source: ./myenv
-    destination: /home/ec2-user/var/www/myenv
+
+
   
 permissions:
   - object: /home/ec2-user/www
