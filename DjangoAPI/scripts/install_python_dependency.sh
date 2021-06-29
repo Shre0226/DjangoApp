@@ -5,6 +5,8 @@ yum install httpd
 service httpd start
 chkconfig httpd on
 yum install -y python3
+yum -y install libffi-devel
+yum install -y openssl-devel
 yum install httpd-devel
 yum install -y mod_wsgi
 pip3 install django==2.1.1
