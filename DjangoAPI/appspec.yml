@@ -21,9 +21,6 @@ hooks:
     - location: scripts/start.sh
       timeout: 5000
       runas: root
-  ApplicationStop:
-    - echo "Application stopped"
-      timeout: 5000
-      runas: root
+
   
       
