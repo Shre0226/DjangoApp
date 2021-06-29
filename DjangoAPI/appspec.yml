@@ -1,8 +1,5 @@
 version: 0.0
 os: linux
-
-
-  
 permissions:
   - object: /home/ec2-user/www
     pattern: "**"
