@@ -10,17 +10,11 @@ permissions:
     group: ec2-user
 hooks:
   BeforeInstall:
-    - location: /home/ec2-user/var/www/DjanjoApp/DjangoAPI/scripts/clean_instance.sh
-      timeout: 5000
+    - echo "BeforeInstall"
   AfterInstall:
-    - location: /home/ec2-user/var/www/DjanjoApp/DjangoAPI/scripts/install_python_dependency.sh
-      timeout: 5000
-    - location: /home/ec2-user/var/www/DjanjoApp/DjangoAPI/scripts/migrate.sh
-      timeout: 5000
-      runas: root  
+    - echo "AfterreInstall" 
   ApplicationStart:
-    - location: /home/ec2-user/var/www/DjanjoApp/DjangoAPI/scripts/start.sh
-      timeout: 5000
+    - echo "start"
       
 
   
