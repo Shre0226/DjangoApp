@@ -15,6 +15,8 @@ hooks:
     - echo "AfterreInstall" 
   ApplicationStart:
     - echo "start"
+  ApplicationStop:
+    - echo "stop"
       
 
   
