@@ -14,7 +14,7 @@ pip3 install django-cors-headers
 pip3 install djangorestframework
 pip3 install virtualenv
 cd /var/www/
-chown ec2-user:ec2-user /home/ec2-user/var/www/
+chown ec2-user:ec2-user /home/ec2-user/var/www/DjangoApp/
 chown ec2-user:ec2-user /home/ec2-user/var/www/DjangoApp/DjangoAPI/myenv/
 chown ec2-user:ec2-user /home/ec2-user/var/www/DjangoApp/DjangoAPI/myenv/*
 source /home/ec2-user/var/www/DjangoApp/DjangoAPI/myenv/bin/activate
