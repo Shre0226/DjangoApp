@@ -1,13 +1,5 @@
 version: 0.0
 os: linux
-files:
-  - source: ./
-    destination: var/www/DjangoApp
-permissions:
-  - object: /var/www/DjangoApp
-    pattern: "**"
-    owner: ec2-user
-    group: ec2-user
 hooks:
   BeforeInstall:
     - echo "BeforeInstall"
