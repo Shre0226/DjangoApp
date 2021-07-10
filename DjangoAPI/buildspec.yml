@@ -21,8 +21,4 @@ artifacts:
   # notably excluded is node_modules, as this will cause overwrite error on deploy
   files:
     - DjangoApp/DjangoAPI/**/*
-    - DjangoApp/EmployeeApp/**/*
-    - DjangoApp/scripts/*
-    - DjangoApp/appspec.yml
-    - DjangoApp/buildspec.yml
-    - DjangoApp/manage.py
+
