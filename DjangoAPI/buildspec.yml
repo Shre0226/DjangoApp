@@ -20,9 +20,9 @@ artifacts:
   # include all files required to run application
   # notably excluded is node_modules, as this will cause overwrite error on deploy
   files:
-    - DjangoAPI/**/*
-    - EmployeeApp/**/*
-    - scripts/*
-    - appspec.yml
-    - buildspec.yml
-    - manage.py
+    - DjangoApp/DjangoAPI/**/*
+    - DjangoApp/EmployeeApp/**/*
+    - DjangoApp/scripts/*
+    - DjangoApp/appspec.yml
+    - DjangoApp/buildspec.yml
+    - DjangoApp/manage.py
