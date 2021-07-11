@@ -1,0 +1,31 @@
+version: 0.1
+
+
+phases:
+  install:
+    runtime-version:
+      python: 3.8
+  pre_build:
+    command: 
+      - echo Prebuilt sucessfull
+      # install django
+      - pip install django
+  build:
+    command:
+      - echo build successfull
+  post_build:
+    command:
+      - echo postbuild successfull
+artifacts:
+  # include all files required to run application
+  # notably excluded is node_modules, as this will cause overwrite error on deploy
+  files:
+    - DjangoAPI/DjangoAPI/**/*
+    - DjangoAPI/EmployeeApp/**/*
+    - DjangoAPI/scripts/*
+    - DjangoAPI/appspec.yml
+    - DjangoAPI/buildspec.yml
+    - DjangoAPI/manage.py
+    - myenv/*
+    
+
