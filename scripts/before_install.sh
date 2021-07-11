@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+sudo su
+yum update -y
+yum install httpd
+service httpd start
+chkconfig httpd on
+yum install -y python3
+yum -y install libffi-devel
+yum install -y openssl-devel
+yum install httpd-devel
+yum install -y mod_wsgi
+pip3 install django==2.1.1
+pip3 install django-cors-headers
+pip3 install djangorestframework
+pip3 install virtualenv
+chown ec2-user:ec2-user /home/ec2-user/var/www/DjangoApp/
+chown ec2-user:ec2-user /home/ec2-user/var/www/DjangoApp/DjangoAPI/myenv/
+chown ec2-user:ec2-user /home/ec2-user/var/www/DjangoApp/DjangoAPI/myenv/*
+source /home/ec2-user/var/www/DjangoApp/DjangoAPI/myenv/bin/activate
+
